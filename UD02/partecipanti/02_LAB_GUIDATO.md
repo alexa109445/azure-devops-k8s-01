@@ -266,7 +266,7 @@ Verifica il risultato:
 az network vnet show \
 --resource-group "$LAB_RG" \
 --name "$LAB_VNET" \
---query "{Name:name,Location:location,Address:addressSpace.addressPrefixes,Subnets:subnets[].{Name:name,Prefix:addressPrefix},Tags:tags}" \
+--query "{Name:name,Location:location,Address:addressSpace.addressPrefixes,Subnets:subnets[].{Name:name,Prefix:addressPrefixes},Tags:tags}" \
 --output jsonc
 ```
 
