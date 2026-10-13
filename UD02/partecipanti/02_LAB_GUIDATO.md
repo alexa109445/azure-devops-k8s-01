@@ -264,10 +264,10 @@ Verifica il risultato:
 
 ```bash
 az network vnet show \
-  --resource-group "$LAB_RG" \
-  --name "$LAB_VNET" \
-  --query "{Name:name,Location:location,Address:addressSpace.addressPrefixes,Subnets:subnets[].{Name:name,Prefix:addressPrefix},Tags:tags}" \
-  --output jsonc
+--resource-group "$LAB_RG" \
+--name "$LAB_VNET" \
+--query "{Name:name,Location:location,Address:addressSpace.addressPrefixes,Subnets:subnets[].{Name:name,Prefix:addressPrefix},Tags:tags}" \
+--output jsonc
 ```
 
 L'output deve mostrare la VNet, l'intervallo `/16`, la subnet e l'intervallo `/24`.
