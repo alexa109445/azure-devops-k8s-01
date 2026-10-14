@@ -63,3 +63,15 @@ Il documento deve contenere:
 - cleanup ordinato e verificabile.
 
 ⏱
+## Controllo della consegna
+
+Prima di terminare verifica e prepara soltanto il file del laboratorio autonomo:
+
+```bash
+git diff -- consegne/UD03/02_LAB_AUTONOMO.md
+git add consegne/UD03/02_LAB_AUTONOMO.md
+git diff --cached -- consegne/UD03/02_LAB_AUTONOMO.md
+```
+
+⏱
+
