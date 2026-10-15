@@ -117,7 +117,7 @@ az storage blob upload \
 az storage blob download \
   --account-name "$LAB_STORAGE" \
   --container-name "$LAB_CONTAINER" \
-  --name documento-lab.txt \
+  --name 01_DOCUMENTO_LAB.txt  \
   --file /tmp/documento-lab-scaricato.txt \
   --auth-mode login \
   --overwrite \
