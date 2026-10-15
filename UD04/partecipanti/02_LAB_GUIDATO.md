@@ -159,7 +159,7 @@ SAS_EXPIRY="$(date -u -d '+30 minutes' +%Y-%m-%dT%H:%MZ)"
 SAS_URL="$(az storage blob generate-sas \
   --account-name "$LAB_STORAGE" \
   --container-name "$LAB_CONTAINER" \
-  --name documento-lab.txt \
+  --name 01_DOCUMENTO_LAB.txt \
   --permissions r \
   --expiry "$SAS_EXPIRY" \
   --auth-mode login \
